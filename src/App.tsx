@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import Julian from './components/Julian';
-import Valentin from './components/valentin';
+import Valentin from './components/Valentin';
+import Probando from './components/Probando';
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className='App'>
       <Julian />
       <Valentin />
+      <Probando />
     </div>
   );
 }
