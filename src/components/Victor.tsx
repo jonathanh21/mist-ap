@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Probando() {
-  return <div>pruebo2 push 233333</div>;
+function Victor() {
+  return <div>hola GIT</div>;
 }
 
-export default Probando;
+export default Victor;
