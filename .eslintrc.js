@@ -22,5 +22,6 @@ module.exports = {
     '@typescript-eslint',
   ],
   'rules': {
-  },
+    "require-jsdoc" : 0
+    },
 };

@@ -1,15 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import Julian from './components/Julian';
-import Valentin from './components/Valentin';
-import Probando from './components/Probando';
+import InputExpDate from "./components/InputExpDate.component"
 import './App.css';
+import { FormCrearCuenta } from "./components/FormCrearCuenta"
+
 function App() {
   return (
     <div className='App'>
-      <Julian />
-      <Valentin />
-      <Probando />
+      <FormCrearCuenta />
+      <InputExpDate />
     </div>
   );
 }
