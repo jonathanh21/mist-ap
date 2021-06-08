@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import Julian from './Julian';
+import Julian from './components/Julian';
 import './App.css';
 
 function App() {
