@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Julian() {
-  return <div>hola</div>;
+  return <div>hola 2</div>;
 }
 
 export default Julian;
