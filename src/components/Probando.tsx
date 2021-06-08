@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Probando() {
-  return <div>hola</div>;
+  return <div>pruebo2 push 23333333</div>;
 }
 
 export default Probando;
