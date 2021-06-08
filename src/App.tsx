@@ -4,6 +4,7 @@ import Julian from './components/Julian';
 import Valentin from './components/Valentin';
 import Probando from './components/Probando';
 import Jonathan from './components/jonathan';
+import Victor from './components/Victor';
 import './App.css';
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Valentin />
       <Probando />
       <Jonathan />
+      <Victor />
     </div>
   );
 }
