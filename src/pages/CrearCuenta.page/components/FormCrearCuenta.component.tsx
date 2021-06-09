@@ -1,19 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SelectInput from '../../../components/SelectInput';
-// import { Iinput } from "../models"
+
+interface ItypeInput {
+  type: string;
+}
 
 export function FormCrearCuenta() {
-  //   const onSubmit = ():Iinput => {
-  //   verificar que los inputs del select correspondan a sus valores unicos antes de enviar el POST a la DB
-  //   }
+  const [input, setInput] = useState<ItypeInput>({
+    type: '',
+  });
+
+  const handleInputChange = (
+    name: string,
+    value: string | number | null
+  ): void => {
+    setInput({
+      ...input,
+      [name]: value,
+    });
+  };
 
   return (
     <div>
       <SelectInput
+        handleInputChange={handleInputChange}
         selectValues={['independiente', 'salon']}
         inputType={'type'}
       />
-      <SelectInput selectValues={['CC', 'NIT', 'CE']} inputType={'id_type'} />
+      Boton Crear Cuenta
     </div>
   );
 }

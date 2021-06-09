@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormCrearCuenta } from './components/FormCrearCuenta.component';
+import { FormCrearCuenta } from './pages/CrearCuenta.page/components/FormCrearCuenta.component';
 import './App.css';
 function App() {
   return (
