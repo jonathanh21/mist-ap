@@ -1,6 +1,7 @@
 import React, { ChangeEvent, useState, useEffect } from 'react';
 import { setState , getState  } from '../services/index';
-import { IselectProps } from "../models"
+import { IselectProps } from "../models";
+import "../styles/Css/index.css"
 
 
 function SelectInput({
@@ -28,17 +29,17 @@ function SelectInput({
 
   return (
     <select
-      className='selectTipoDNI'
+      className='input'
       name={inputType}
       onChange={handleSelectChange}
       defaultValue={input}
     >
-      <option value='' disabled selected hidden>
+      <option className="input" value='' disabled selected hidden>
         Por favor elija...
       </option>
       {selectValues.map((el, id) => {
         return (
-          <option key={id} value={el}>
+          <option className="input"key={id} value={el}>
             {el}
           </option>
         );

@@ -1,5 +1,5 @@
 import React from 'react';
-import SelectInput from './SelectInput';
+import SelectInput from '../../../components/SelectInput';
 // import { Iinput } from "../models" 
 
 
@@ -19,7 +19,6 @@ export function FormCrearCuenta() {
         selectValues={['CC', 'NIT', 'CE']}
         inputType={'id_type'}
       />
-      Nombre Celular Correo Electronico
     </div>
   );
 }
