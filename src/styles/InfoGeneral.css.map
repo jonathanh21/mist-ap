@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,gBAAgB,EAAE,IAAI;CACzB",
+    "sources": [
+        "InfoGeneral.scss"
+    ],
+    "names": [],
+    "file": "InfoGeneral.css"
+}
