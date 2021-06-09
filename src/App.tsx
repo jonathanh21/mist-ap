@@ -1,11 +1,10 @@
 import React from 'react';
-import CrearCuenta from "./pages/CrearCuenta.page/CrearCuenta.page"
-import "./styles/Css/index.css"
-
+import { FormCrearCuenta } from './components/FormCrearCuenta.component';
+import './App.css';
 function App() {
   return (
     <div className='App'>
-      <CrearCuenta />
+      <FormCrearCuenta />
     </div>
   );
 }

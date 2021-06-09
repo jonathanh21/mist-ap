@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Poppings Light";
-  src: url("../../assets/fonts/Poppins/Poppins-Light.ttf") format("truetype");
+  font-family: 'Poppings Light';
+  src: url('../../assets/fonts/Poppins/Poppins-Light.ttf') format('truetype');
 }
 
 .App {
@@ -14,7 +14,7 @@
 }
 
 input {
-  font-family: "Poppings Light";
+  font-family: 'Poppings Light';
   box-sizing: border-box;
   padding: 12px 17.5px;
   width: 315px;

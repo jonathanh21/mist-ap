@@ -1,45 +1,33 @@
-import React, { ChangeEvent, useState, useEffect } from 'react';
-import { setState , getState  } from '../services/index';
-import { IselectProps } from "../models";
-import "../styles/Css/index.css"
-
-
+import React, { ChangeEvent } from 'react';
+interface IselectProps {
+  handleInputChange: (name: string, value: string | number | null) => void;
+  selectValues: string[];
+  inputType: string;
+}
 function SelectInput({
+  handleInputChange,
   selectValues,
   inputType,
-}: IselectProps) {
-  
-  const [input, setInput] = useState<string>("")
-
-  useEffect(()=>{
-      setState({
-          ...getState(),
-          input
-      })
-      console.log(input)
-  },[input])
-
-  // useEffect(()=>{
-  //   stateObservable().subscribe(data=> console.log(data))
-  // },[])
-
-  const handleSelectChange = (e: ChangeEvent<HTMLSelectElement>):void => {
-    e.target.value?setInput(e.target.value):null
-  }
-
+}: {
+  handleInputChange: IselectProps['handleInputChange'];
+  selectValues: IselectProps['selectValues'];
+  inputType: IselectProps['inputType'];
+}) {
   return (
     <select
-      className='input'
+      className='selectInput'
       name={inputType}
-      onChange={handleSelectChange}
-      defaultValue={input}
+      onChange={(e: ChangeEvent<HTMLSelectElement>) => {
+        console.log(e.target.value);
+        handleInputChange(e.target.name, e.target.value);
+      }}
     >
-      <option className="input" value='' disabled selected hidden>
+      <option value='' disabled selected hidden>
         Por favor elija...
       </option>
       {selectValues.map((el, id) => {
         return (
-          <option className="input"key={id} value={el}>
+          <option key={id} value={el}>
             {el}
           </option>
         );
