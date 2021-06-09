@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
-import SelectInput from './SelectInput';
-import { Iinput } from '../models';
+import SelectInput from '../../../components/SelectInput';
+import { IinputSalon } from '../../../models';
 
 function FormSalonInfoGeneral() {
-  const [input, setInput] = useState<Iinput>({
+  const [input, setInput] = useState<IinputSalon>({
     name: '',
     tel: '',
     email: '',
     idDoc: '',
     idType: '',
-    idExpeditionDate: '',
-    idExpirationDate: '',
     rating: null,
     type: '',
     userId: '',
-    salonId: '',
+    reason: '',
+    legalName: '',
+    legalIdDoc: '',
+    legalIdType: '',
   });
 
   const handleInputChange = (
@@ -29,12 +30,19 @@ function FormSalonInfoGeneral() {
 
   return (
     <div>
+      Nombre Razon Social
       <SelectInput
         handleInputChange={handleInputChange}
         selectValues={['CC', 'NIT', 'CE']}
         inputType={'id_type'}
       />
-      Nombre Celular Correo Electronico
+      Documento Representante Legal
+      <SelectInput
+        handleInputChange={handleInputChange}
+        selectValues={['CC', 'NIT', 'CE']}
+        inputType={'id_type'}
+      />
+      Celular Correo Electronico
     </div>
   );
 }

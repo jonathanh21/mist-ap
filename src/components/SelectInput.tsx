@@ -18,7 +18,6 @@ function SelectInput({
       className='selectInput'
       name={inputType}
       onChange={(e: ChangeEvent<HTMLSelectElement>) => {
-        console.log(e.target.value);
         handleInputChange(e.target.name, e.target.value);
       }}
     >
