@@ -1,11 +1,7 @@
 import React, { ChangeEvent, useState } from 'react';
 import '../styles/Css/index.css';
+import {InputString} from '../models/components.interfaces'
 
-interface InputString {
-  name: string;
-  placeholder: string;
-  handleInputChange: (name: string, value: string | number | null) => void;
-}
 
 /**
  * PROPS
