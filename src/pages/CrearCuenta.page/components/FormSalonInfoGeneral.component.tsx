@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SelectInput from '../../../components/SelectInput';
+import SelectInput from '../../../components/SelectInput.component';
 import { IinputSalon } from '../../../models';
 
 function FormSalonInfoGeneral() {

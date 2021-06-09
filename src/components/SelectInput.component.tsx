@@ -1,9 +1,6 @@
 import React, { ChangeEvent } from 'react';
-interface IselectProps {
-  handleInputChange: (name: string, value: string | number | null) => void;
-  selectValues: string[];
-  inputType: string;
-}
+import { IselectProps } from '../models/components.interfaces';
+
 function SelectInput({
   handleInputChange,
   selectValues,
