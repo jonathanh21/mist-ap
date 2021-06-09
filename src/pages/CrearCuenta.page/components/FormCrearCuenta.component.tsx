@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SelectInput from '../../../components/SelectInput';
+import SelectInput from '../../../components/SelectInput.component';
 
 interface ItypeInput {
   type: string;
