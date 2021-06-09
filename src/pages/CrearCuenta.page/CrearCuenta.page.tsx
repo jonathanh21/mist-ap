@@ -1,12 +1,11 @@
 import React from 'react';
 import { FormCrearCuenta } from './components/FormCrearCuenta.component';
-import './App.css';
-function App() {
+
+export default function CrearCuenta() {
   return (
-    <div className='App'>
+    <div>
+      <h2>Crear Cuenta</h2>
       <FormCrearCuenta />
     </div>
   );
 }
-
-export default App;

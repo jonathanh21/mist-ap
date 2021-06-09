@@ -15,7 +15,7 @@ function SelectInput({
 }) {
   return (
     <select
-      className='selectTipoDNI'
+      className='selectInput'
       name={inputType}
       onChange={(e: ChangeEvent<HTMLSelectElement>) => {
         console.log(e.target.value);
