@@ -1,34 +1,39 @@
-import React, {useState, ChangeEvent} from 'react';
-import '../styles/Css/index.css'
-import {IInputMail, IMail} from '../models/components.interfaces'
+import React, { useState, ChangeEvent } from 'react';
+import '../styles/Css/index.css';
+import { iInputMail, iMail } from '../models/components.interfaces';
 /* git branch -m master main */
-
 
 /**
  * PROPS
- * @name string, 
- * @placeholder string, 
+ * @name string,
+ * @placeholder string,
  * @handleInputChange (name: string, value: string | number | null) => void
  */
 
-const InputMailComponent = (props:IInputMail): JSX.Element => {
-    const [mail, setMail] = useState<IMail>({
-        mail: ""
-    })
+const InputMailComponent = (props: iInputMail): JSX.Element => {
+  const [mail, setMail] = useState<iMail>({
+    mail: '',
+  });
 
-    const handleChange = (e: ChangeEvent) :void => {
-        const {name, value} = (e.target as HTMLInputElement)
-        if (value.length <= 60){
-            setMail({
-                mail: value
-            })
-            props.handleInputChange(name, value)
-        }
+  const handleChange = (e: ChangeEvent): void => {
+    const { name, value } = e.target as HTMLInputElement;
+    if (value.length <= 60) {
+      setMail({
+        mail: value,
+      });
+      props.handleInputChange(name, value);
     }
+  };
 
-    return (
-        <input type="text" onChange={handleChange} name={props.name} value={mail.mail} placeholder={props.placeholder}/>
-    );
-}
+  return (
+    <input
+      type='text'
+      onChange={handleChange}
+      name={props.name}
+      value={mail.mail}
+      placeholder={props.placeholder}
+    />
+  );
+};
 
 export default InputMailComponent;
