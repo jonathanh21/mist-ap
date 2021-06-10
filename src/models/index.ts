@@ -12,8 +12,7 @@ export interface Iinput {
   salonId: string;
 }
 
-
 export interface IselectProps {
-    selectValues: string[];
-    inputType: string;
-  }
+  selectValues: string[];
+  inputType: string;
+}

@@ -6,9 +6,7 @@ const $state = new BehaviorSubject<{
   [key: string]: any;
 }>({});
 
-export function setState(state: {
-  [key: string]: any;
-}): void {
+export function setState(state: { [key: string]: any }): void {
   $state.next(state);
 }
 
