@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Sass/index.scss';
 interface IStepsProps {
   text: string;
 }

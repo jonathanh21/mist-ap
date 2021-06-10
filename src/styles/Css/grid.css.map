@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,OAAO,EAAC,IAAI;EACZ,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,IAAI;EACjB,aAAa,EAAE,IAAI;CAKtB;;AATD,AAMI,eANW,CAMX,KAAK,CAAC;EACF,WAAW,EAAE,GAAG;CACnB;;AAGL,AAAA,GAAG,CAAC,EAAE,AAAA,MAAM,CAAC;EACT,MAAM,EAAE,mBAAmB;CAC9B;;AAED,AAAA,UAAU,CAAC;EACP,MAAM,EAAE,uBAAuB;CAClC",
+    "sources": [
+        "../Sass/grid.scss"
+    ],
+    "names": [],
+    "file": "grid.css"
+}

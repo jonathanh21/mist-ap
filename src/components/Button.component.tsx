@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/Css/Button.component.css'
-import {iButton} from '../models/components.interfaces'
+import '../styles/Css/index.css'
+import {IButton} from '../models/components.interfaces'
 
 
 /**
@@ -11,7 +11,7 @@ import {iButton} from '../models/components.interfaces'
  * @isValid debe ser un boolean
  */
 
-const ButtonComponent = (props:iButton) => {
+const ButtonComponent = (props:IButton) => {
     
     return (
         <div className={props.isValid ? "button isValid" : "button"} onClick={props.handleSubmit}>

@@ -1,25 +1,52 @@
-@font-face {
-  font-family: 'Poppings Light';
-  src: url('../../assets/fonts/Poppins/Poppins-Light.ttf') format('truetype');
-}
+@import 'fonts';
 
 .App {
   width: 360px;
-  height: 780px;
+  max-height: 1087px;
+  min-height: 780px;
   border: 1px solid black;
-  margin: 10px auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 input {
-  font-family: 'Poppings Light';
   box-sizing: border-box;
   padding: 12px 17.5px;
   width: 315px;
   font-size: 14px;
   line-height: 21px;
+  margin-top:10px;
+
+  border: 0.5px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+input::placeholder {
+    color:#C4C4C4
+}
+
+select {
+    padding: 12px 17.5px;
+    font-size: 14px;
+    width:315px;
+    line-height: 21px;
+    margin-top:10px;
+    background: #FFFFFF;
+
+    border: 0.5px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+input[type=text]{
+  box-sizing: border-box;
+  padding: 12px 17.5px;
+  width: 315px;
+  font-size: 14px;
+  line-height:21px;
 }
 
 input[type=text]{
@@ -32,18 +59,19 @@ input[type=text]{
 }
 
 .TitleText {
-  width: 190px;
   left: 55px;
   top: 76px;
+  width:249px;
   box-sizing: border-box;
   font-weight: 700;
-  font-family: 'Poppins';
   font-size: 24px;
   line-height: 1.5rem;
   letter-spacing: 0.002em;
   color: #606060;
   text-align: center;
-  margin: 10px auto;
+  margin: auto;
+  align-self: center;
+  display:flex
 }
 
 .StepsText {
@@ -60,9 +88,117 @@ input[type=text]{
 
   color: #ffa41d;
   text-align: center;
-  margin: 10px auto;
+  margin: 46px 55.5px 12px 53.5px;
 }
 
+.button{
+  height: 45px;
+  width: 315px;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 14px 17.5px;
+  box-sizing: border-box;
+  text-align: center;
+  
+  background: #FFD292;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.isValid{
+  background: #FFA41D;
+}
+
+.crear {
+    margin: 52px 55px 34px 56px;
+    width: 249px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5rem;
+    letter-spacing: 0.002em;
+    color: #606060;
+    display:flex;
+}
+
+.infoGeneral {
+    margin: 12px 55px 33px 56px;
+    width: 249px;
+    height: 40px;
+    display:flex;
+}
+
+.inputContainer {
+    display:flex;
+    flex-direction: column;
+    margin-left: 22px;
+    padding-right: 25px;
+    
+    label {
+        width: 314px;
+        height: 10px;
+        left: 23px;
+        top: 126px;
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        padding-left: 1px;
+        margin-top:24px;
+        letter-spacing: 0.03em;
+
+        /* Gris */
+        
+        color: #606060;
+    }
+}
+
+.buttonCrear {
+    margin-top:45px
+}
+
+.form {
+    button {
+        margin: 10px;
+    }
+}
+
+<<<<<<< HEAD
+.buttonsContainer {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.legal {
+    margin: 12px 55px 33px 56px;
+    width:210px;
+    padding-left:20px;
+    display:flex
+}
+
+.reg {
+    height: 45px;
+    width: 315px;
+    margin: 300px auto;
+    border-radius: 4px;
+    padding: 14px 17.5px;
+    box-sizing: border-box;
+    text-align: center;
+    
+    background: #FFA41D;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+=======
 .button{
   height: 45px;
   width: 315px;
@@ -81,4 +217,5 @@ input[type=text]{
 
 .isValid{
   background: #FFA41D;
+>>>>>>> ae23cf0e6c790b90ae119ee2f5ee81553aabd2f2
 }
