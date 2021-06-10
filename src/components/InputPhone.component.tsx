@@ -1,13 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Css/index.css';
+import {IInput, IPhone} from '../models/components.interfaces'
 
-interface IInput {
-  handleInputChange: (name: string, value: string | number | null) => void;
-}
-
-interface IPhone {
-  phone: string;
-}
 
 const InputPhone = (props: IInput): JSX.Element => {
   const [phone, setPhone] = useState<IPhone>({
