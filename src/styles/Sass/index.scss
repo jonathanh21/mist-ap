@@ -22,6 +22,15 @@ input {
   line-height: 21px;
 }
 
+input[type=text]{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  padding: 12px 17.5px;
+  width: 315px;
+  font-size: 14px;
+  line-height:21px;
+}
+
 .TitleText {
   width: 190px;
   left: 55px;
@@ -52,4 +61,24 @@ input {
   color: #ffa41d;
   text-align: center;
   margin: 10px auto;
+}
+
+.button{
+  height: 45px;
+  width: 315px;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 14px 17.5px;
+  box-sizing: border-box;
+  
+  background: #FFD292;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.isValid{
+  background: #FFA41D;
 }
