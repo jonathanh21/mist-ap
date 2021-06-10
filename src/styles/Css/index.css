@@ -189,4 +189,38 @@ input[type='text'] {
   font-weight: 400;
   text-transform: capitalize;
 }
+
+.button {
+  height: 45px;
+  width: 315px;
+  margin: 300px auto;
+  border-radius: 4px;
+  padding: 14px 17.5px;
+  box-sizing: border-box;
+  background: #ffd292;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.isValid {
+  background: #ffa41d;
+}
+
+.labelText {
+  font-family: 'Poppins', sans-serif;
+  color: #606060;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  padding-left: 1px;
+  margin-top: 24px;
+  letter-spacing: 0.03em;
+}
 /*# sourceMappingURL=index.css.map */

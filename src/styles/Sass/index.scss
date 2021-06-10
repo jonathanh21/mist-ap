@@ -216,3 +216,18 @@ input[type='text'] {
 .isValid {
   background: #ffa41d;
 }
+
+.labelText {
+  font-family: 'Poppins', sans-serif;
+  color: #606060;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  padding-left: 1px;
+  margin-top: 24px;
+  letter-spacing: 0.03em;
+}

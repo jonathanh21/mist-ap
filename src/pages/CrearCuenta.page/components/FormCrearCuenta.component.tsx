@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SelectInput from '../../../components/SelectInput.component';
+import LabelText from '../../../components/LabelText.component';
 
 interface ItypeInput {
   type: string;
@@ -21,14 +22,13 @@ export function FormCrearCuenta() {
   };
 
   return (
-    <div className="inputContainer">
-      <label>Modalidad de Servicio</label>
+    <div className='inputContainer'>
+      <LabelText text='Modalidad de Servicio' />
       <SelectInput
         handleInputChange={handleInputChange}
         selectValues={['independiente', 'salon']}
         inputType={'type'}
       />
-
     </div>
   );
 }

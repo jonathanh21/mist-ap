@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Css/index.css';
+
 interface ITitleProps {
   text: string;
 }
