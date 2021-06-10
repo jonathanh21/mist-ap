@@ -10,11 +10,13 @@ export interface iButton {
   isValid: boolean;
 }
 
+
 export interface iInputMail {
   name: string;
   placeholder: string;
   handleInputChange: (name: string, value: string | number | null) => void;
 }
+
 
 export interface iMail {
   mail: string;
