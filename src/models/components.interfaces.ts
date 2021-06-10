@@ -4,19 +4,19 @@ export interface IselectProps {
   inputType: string;
 }
 
-export interface iButton {
+export interface IButton {
   text: string,
   handleSubmit: () => void,
   isValid: boolean
 }
 
-export interface iInputMail {
+export interface IInputMail {
   name: string,
   placeholder: string,
   handleInputChange: (name: string, value: string | number | null) => void
 }
 
-export interface iMail {
+export interface IMail {
   mail: string
 }
 

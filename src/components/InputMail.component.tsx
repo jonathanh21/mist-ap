@@ -1,6 +1,6 @@
 import React, {useState, ChangeEvent} from 'react';
-import '../styles/Css/InputMail.component.css'
-import {iInputMail, iMail} from '../models/components.interfaces'
+import '../styles/Css/index.css'
+import {IInputMail, IMail} from '../models/components.interfaces'
 /* git branch -m master main */
 
 
@@ -11,8 +11,8 @@ import {iInputMail, iMail} from '../models/components.interfaces'
  * @handleInputChange (name: string, value: string | number | null) => void
  */
 
-const InputMailComponent = (props:iInputMail): JSX.Element => {
-    const [mail, setMail] = useState<iMail>({
+const InputMailComponent = (props:IInputMail): JSX.Element => {
+    const [mail, setMail] = useState<IMail>({
         mail: ""
     })
 

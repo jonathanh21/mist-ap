@@ -7,7 +7,7 @@ import InputPhone from '../../../components/InputPhone.component';
 import InputMailComponent from '../../../components/InputMail.component';
 import ButtonComponent from '../../../components/Button.component';
 
-function FormSalonInfoGeneral() {
+function FormIndependienteInfoGeneral() {
   const [input, setInput] = useState<IInputSalon>({
     name: '',
     tel: '',
@@ -36,22 +36,8 @@ function FormSalonInfoGeneral() {
   return (
     <div>
       <div className="inputContainer">
-        <label>Nombre del negocio</label>
-        <InputTextNameAlphaNum name="name" placeholder="Nombre del negocio" handleInputChange={handleInputChange}/>
-      </div>
-      <div className="inputContainer">
-        <label>Razon Social</label>
-        <InputTextNameAlpha name="reason" placeholder="Razon Social" handleInputChange={handleInputChange}/>
-      </div>
-      <div className="inputContainer">
-        <DefaultInput placeholder="Documento"/>
-      </div>
-      <div className="inputContainer">
-        <label>Representante Legal</label>
-        <InputTextNameAlpha name="legalName" placeholder="Representante Legal" handleInputChange={handleInputChange}/>
-      </div>
-      <div className="inputContainer">
-        <DefaultInput placeholder="Identificacion del Representante Legal"/>
+        <label>Nombre</label>
+        <InputTextNameAlpha name="name" placeholder="Nombre Apellido" handleInputChange={handleInputChange}/>
       </div>
       <div className="inputContainer">
         <label>Celular</label>
@@ -60,6 +46,15 @@ function FormSalonInfoGeneral() {
       <div className="inputContainer">
         <label>Correo electrónico</label>
         <InputMailComponent name="email" placeholder="Ingresa tu corre electrónico" handleInputChange={handleInputChange}/>
+      </div>
+      <div className="inputContainer">
+        <DefaultInput placeholder="Documento"/>
+      </div>
+      <div className="inputContainer">
+        <DefaultInput placeholder="Ciudad de expedición"/>
+      </div>
+      <div className="inputContainer">
+        <DefaultInput placeholder="Fecha de expedición"/>
       </div>
       <div className="inputContainer">
         <label>Usuario</label> 
@@ -74,4 +69,4 @@ function FormSalonInfoGeneral() {
 
 // El input de usuario no se encuentra en el model de partner
 
-export default FormSalonInfoGeneral;
+export default FormIndependienteInfoGeneral;

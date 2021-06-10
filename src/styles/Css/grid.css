@@ -1,0 +1,19 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 22px;
+  padding-right: 25px;
+}
+
+.inputContainer label {
+  margin-left: 1px;
+}
+
+div h2.crear {
+  margin: 52px 55px 34px 56px;
+}
+
+.StepsText {
+  margin: 46px 55.5px 12px 53.5px;
+}
+/*# sourceMappingURL=grid.css.map */

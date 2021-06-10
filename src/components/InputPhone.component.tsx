@@ -36,7 +36,7 @@ const InputPhone = (props: IInput): JSX.Element => {
       name='tel'
       value={phone.phone}
       onChange={handleInputPhone}
-      placeholder='Celular'
+      placeholder='Ingresa tu número de contacto'
       required
     />
   );

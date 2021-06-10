@@ -21,13 +21,14 @@ export function FormCrearCuenta() {
   };
 
   return (
-    <div>
+    <div className="inputContainer">
+      <label>Modalidad de Servicio</label>
       <SelectInput
         handleInputChange={handleInputChange}
         selectValues={['independiente', 'salon']}
         inputType={'type'}
       />
-      Boton Crear Cuenta
+
     </div>
   );
 }
