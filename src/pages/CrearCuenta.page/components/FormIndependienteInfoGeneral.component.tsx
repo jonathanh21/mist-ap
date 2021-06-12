@@ -6,6 +6,7 @@ import { IInputSalon } from '../../../models';
 import InputPhone from '../../../components/InputPhone.component';
 import InputMailComponent from '../../../components/InputMail.component';
 import ButtonComponent from '../../../components/Button.component';
+import LabelText from '../../../components/LabelText.component';
 
 function FormIndependienteInfoGeneral() {
   const [input, setInput] = useState<IInputSalon>({
@@ -35,33 +36,49 @@ function FormIndependienteInfoGeneral() {
 
   return (
     <div>
-      <div className="inputContainer">
-        <label>Nombre</label>
-        <InputTextNameAlpha name="name" placeholder="Nombre Apellido" handleInputChange={handleInputChange}/>
+      <div className='inputContainer'>
+        <LabelText text='Nombre' />
+        <InputTextNameAlpha
+          name='name'
+          placeholder='Nombre Apellido'
+          handleInputChange={handleInputChange}
+        />
       </div>
-      <div className="inputContainer">
-        <label>Celular</label>
-        <InputPhone handleInputChange={handleInputChange}/>
+      <div className='inputContainer'>
+        <LabelText text='Celular' />
+        <InputPhone handleInputChange={handleInputChange} />
       </div>
-      <div className="inputContainer">
-        <label>Correo electrónico</label>
-        <InputMailComponent name="email" placeholder="Ingresa tu corre electrónico" handleInputChange={handleInputChange}/>
+      <div className='inputContainer'>
+        <LabelText text='Correo electrónico' />
+        <InputMailComponent
+          name='email'
+          placeholder='Ingresa tu corre electrónico'
+          handleInputChange={handleInputChange}
+        />
       </div>
-      <div className="inputContainer">
-        <DefaultInput placeholder="Documento"/>
+      <div className='inputContainer'>
+        <DefaultInput placeholder='Documento' />
       </div>
-      <div className="inputContainer">
-        <DefaultInput placeholder="Ciudad de expedición"/>
+      <div className='inputContainer'>
+        <DefaultInput placeholder='Ciudad de expedición' />
       </div>
-      <div className="inputContainer">
-        <DefaultInput placeholder="Fecha de expedición"/>
+      <div className='inputContainer'>
+        <DefaultInput placeholder='Fecha de expedición' />
       </div>
-      <div className="inputContainer">
-        <label>Usuario</label> 
-        <InputTextNameAlphaNum name="user" placeholder="Ingresa el nombre de usuario" handleInputChange={handleInputChange}/>
+      <div className='inputContainer'>
+        <LabelText text='Usuario' />
+        <InputTextNameAlphaNum
+          name='user'
+          placeholder='Ingresa el nombre de usuario'
+          handleInputChange={handleInputChange}
+        />
       </div>
-      <div className="buttonCrear">
-        <ButtonComponent text="Continuar" handleSubmit={()=>{}} isValid={true}/>
+      <div className='buttonCrear'>
+        <ButtonComponent
+          text='Continuar'
+          handleSubmit={() => {}}
+          isValid={true}
+        />
       </div>
     </div>
   );
